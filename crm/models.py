@@ -29,5 +29,5 @@ class Person(models.Model):
     contact_info = models.ForeignKey(ContactInfo, on_delete=models.PROTECT)
 
     def __str__(self):
-        return self.name
+        return f'{self.last_name}, {self.first_name}'
 
